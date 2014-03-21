@@ -26,7 +26,8 @@
         android:layout_below="@+id/imageView1"
         android:layout_marginTop="28dp"
         android:ems="10"
-        android:text="@string/username" >
+        android:inputType="text"
+        android:hint="@string/username" >
 
         <requestFocus />
     </EditText>
@@ -40,7 +41,7 @@
         android:layout_below="@+id/editText1"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="@string/password" />
+        android:hint="@string/password" />
 
     <Button
         android:id="@+id/button1"
@@ -58,6 +59,25 @@
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/button1"
         android:layout_marginTop="15dp"
-        android:text="Button" />
+        android:text="@string/iscriviti" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignRight="@+id/button1"
+        android:layout_toRightOf="@+id/button2"
+        android:text="@string/salta" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/ricordami"
+        android:textSize="20sp" />
 
 </RelativeLayout>

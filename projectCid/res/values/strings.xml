@@ -9,9 +9,11 @@
     <string name="profilo">profilo</string>
     <string name="password">password</string>
     <string name="login">login</string>
-    <string name="inscriviti">inscriviti</string>
+    <string name="iscriviti">iscriviti</string>
     <string name="salta">salta</string>
     <string name="nuovocid">nuovo cid</string>
     <string name="username">username</string>
+    <string name="ricordami">ricordami</string>
+    <string name="title_activity_main">MainActivity</string>
 
 </resources>
