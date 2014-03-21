@@ -12,6 +12,8 @@
         android:id="@+id/view1"
         android:layout_width="100dp"
         android:layout_height="200dp"
+         android:layout_marginTop="16dp"
+         android:layout_marginLeft="16dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true" />
 
@@ -45,6 +47,7 @@
         android:layout_marginRight="23dp"
         android:layout_marginTop="150dp"
         android:text="@string/nuovocid"
+        android:onClick="nuovoCid"
         android:textSize="20sp" />
 
     <LinearLayout
