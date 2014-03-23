@@ -8,6 +8,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/zoomControls1"
+        android:contentDescription="@string/descrizioneImmagineCid"
+        android:src="@drawable/immaginecid" />
+    
     <ZoomControls
         android:id="@+id/zoomControls1"
         android:layout_width="wrap_content"
@@ -16,11 +24,13 @@
         android:layout_alignParentTop="true"
         android:onClick="zoomClick" />
 
-    <ImageView
-        android:id="@+id/imageView1"
-    	android:layout_width="match_parent"
-    	android:layout_height="match_parent"
-        android:layout_alignTop="@+id/zoomControls1"
-        android:src="@drawable/immaginecid" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:text="TextView" />
 
 </RelativeLayout>

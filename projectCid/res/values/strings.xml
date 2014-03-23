@@ -15,5 +15,6 @@
     <string name="username">username</string>
     <string name="ricordami">ricordami</string>
     <string name="title_activity_main">MainActivity</string>
+     <string name="descrizioneImmagineCid">immagine del modulo Cid</string>
 
 </resources>

@@ -8,7 +8,7 @@ import android.view.Menu;
 
 public class LunchActivity extends Activity {
 
-	  private final int DURATA_SCHERMATA_AVVIO = 4000;
+	  private final int DURATA_SCHERMATA_AVVIO = 1000;
 
 	    /** Called when the activity is first created. */
 	    @Override
