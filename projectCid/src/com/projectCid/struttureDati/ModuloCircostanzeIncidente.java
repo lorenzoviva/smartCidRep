@@ -1,7 +1,10 @@
+
 package com.projectCid.struttureDati;
 
 public class ModuloCircostanzeIncidente {
+
 	private boolean[] circostanzeIncidenteA = new boolean[18];
+
 	private boolean[] circostanzeIncidenteB = new boolean[18];
 
 	/**
@@ -21,6 +24,7 @@ public class ModuloCircostanzeIncidente {
 	 * @return the circostanzeIncidenteA
 	 */
 	public boolean[] getCircostanzeIncidenteA() {
+
 		return circostanzeIncidenteA;
 	}
 
@@ -29,6 +33,7 @@ public class ModuloCircostanzeIncidente {
 	 *            the circostanzeIncidenteA to set
 	 */
 	public void setCircostanzeIncidenteA(boolean[] circostanzeIncidenteA) {
+
 		this.circostanzeIncidenteA = circostanzeIncidenteA;
 	}
 
@@ -37,6 +42,7 @@ public class ModuloCircostanzeIncidente {
 	 *            [i] the circostanzeIncidenteA[i] to set
 	 */
 	public void setCircostanzeIncidenteA(boolean circostanzeIncidenteA, int i) {
+
 		this.circostanzeIncidenteA[i] = circostanzeIncidenteA;
 	}
 
@@ -44,6 +50,7 @@ public class ModuloCircostanzeIncidente {
 	 * @return the circostanzeIncidenteA[i]
 	 */
 	public boolean getCircostanzeIncidenteA(int i) {
+
 		return circostanzeIncidenteA[i];
 	}
 
@@ -51,6 +58,7 @@ public class ModuloCircostanzeIncidente {
 	 * @return the circostanzeIncidenteB
 	 */
 	public boolean[] getCircostanzeIncidenteB() {
+
 		return circostanzeIncidenteB;
 	}
 
@@ -59,6 +67,7 @@ public class ModuloCircostanzeIncidente {
 	 *            the circostanzeIncidenteB to set
 	 */
 	public void setCircostanzeIncidenteB(boolean[] circostanzeIncidenteB) {
+
 		this.circostanzeIncidenteB = circostanzeIncidenteB;
 	}
 
@@ -67,6 +76,7 @@ public class ModuloCircostanzeIncidente {
 	 *            [i] the circostanzeIncidenteB[i] to set
 	 */
 	public void setCircostanzeIncidenteB(boolean circostanzeIncidenteB, int i) {
+
 		this.circostanzeIncidenteB[i] = circostanzeIncidenteB;
 	}
 
@@ -74,10 +84,12 @@ public class ModuloCircostanzeIncidente {
 	 * @return the circostanzeIncidenteB[i]
 	 */
 	public boolean getCircostanzeIncidenteB(int i) {
+
 		return circostanzeIncidenteB[i];
 	}
 
 	public String getTipoCircostanzaIncidente(int i) {
+
 		switch (i) {
 		case 0:
 			return "";

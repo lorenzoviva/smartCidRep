@@ -1,17 +1,23 @@
+
 package com.projectCid.struttureDati;
 
 public class Testimone {
 
 	String cognome;
+
 	String nome;
+
 	Indirizzo indirizzo;
+
 	Telefono numero;
+
 	char veicolo;
 
 	/**
 	 * @return the cognome
 	 */
 	public String getCognome() {
+
 		return cognome;
 	}
 
@@ -20,6 +26,7 @@ public class Testimone {
 	 *            the cognome to set
 	 */
 	public void setCognome(String cognome) {
+
 		this.cognome = cognome;
 	}
 
@@ -27,6 +34,7 @@ public class Testimone {
 	 * @return the nome
 	 */
 	public String getNome() {
+
 		return nome;
 	}
 
@@ -35,6 +43,7 @@ public class Testimone {
 	 *            the nome to set
 	 */
 	public void setNome(String nome) {
+
 		this.nome = nome;
 	}
 
@@ -42,6 +51,7 @@ public class Testimone {
 	 * @return the indirizzo
 	 */
 	public Indirizzo getIndirizzo() {
+
 		return indirizzo;
 	}
 
@@ -50,6 +60,7 @@ public class Testimone {
 	 *            the indirizzo to set
 	 */
 	public void setIndirizzo(Indirizzo indirizzo) {
+
 		this.indirizzo = indirizzo;
 	}
 
@@ -57,6 +68,7 @@ public class Testimone {
 	 * @return the numero
 	 */
 	public Telefono getNumero() {
+
 		return numero;
 	}
 
@@ -65,6 +77,7 @@ public class Testimone {
 	 *            the numero to set
 	 */
 	public void setNumero(Telefono numero) {
+
 		this.numero = numero;
 	}
 
@@ -72,6 +85,7 @@ public class Testimone {
 	 * @return the veicolo
 	 */
 	public char getVeicolo() {
+
 		return veicolo;
 	}
 
@@ -80,6 +94,7 @@ public class Testimone {
 	 *            the veicolo to set
 	 */
 	public void setVeicolo(char veicolo) {
+
 		this.veicolo = veicolo;
 	}
 

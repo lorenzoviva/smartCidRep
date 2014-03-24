@@ -1,19 +1,29 @@
+
 package com.projectCid.struttureDati;
 
 public class Utente {
+
 	String cognome;
+
 	String nome;
+
 	String codiceFiscale;
+
 	Indirizzo indirizzo;
+
 	String cap;
+
 	String stato;
+
 	Telefono telefono;
+
 	String email;
 
 	/**
 	 * @return the cognome
 	 */
 	public String getCognome() {
+
 		return cognome;
 	}
 
@@ -22,6 +32,7 @@ public class Utente {
 	 *            the cognome to set
 	 */
 	public void setCognome(String cognome) {
+
 		this.cognome = cognome;
 	}
 
@@ -29,6 +40,7 @@ public class Utente {
 	 * @return the nome
 	 */
 	public String getNome() {
+
 		return nome;
 	}
 
@@ -37,6 +49,7 @@ public class Utente {
 	 *            the nome to set
 	 */
 	public void setNome(String nome) {
+
 		this.nome = nome;
 	}
 
@@ -44,6 +57,7 @@ public class Utente {
 	 * @return the codiceFiscale
 	 */
 	public String getCodiceFiscale() {
+
 		return codiceFiscale;
 	}
 
@@ -52,6 +66,7 @@ public class Utente {
 	 *            the codiceFiscale to set
 	 */
 	public void setCodiceFiscale(String codiceFiscale) {
+
 		this.codiceFiscale = codiceFiscale;
 	}
 
@@ -59,6 +74,7 @@ public class Utente {
 	 * @return the indirizzo
 	 */
 	public Indirizzo getIndirizzo() {
+
 		return indirizzo;
 	}
 
@@ -67,6 +83,7 @@ public class Utente {
 	 *            the indirizzo to set
 	 */
 	public void setIndirizzo(Indirizzo indirizzo) {
+
 		this.indirizzo = indirizzo;
 	}
 
@@ -74,6 +91,7 @@ public class Utente {
 	 * @return the cap
 	 */
 	public String getCap() {
+
 		return cap;
 	}
 
@@ -82,6 +100,7 @@ public class Utente {
 	 *            the cap to set
 	 */
 	public void setCap(String cap) {
+
 		this.cap = cap;
 	}
 
@@ -89,6 +108,7 @@ public class Utente {
 	 * @return the stato
 	 */
 	public String getStato() {
+
 		return stato;
 	}
 
@@ -97,6 +117,7 @@ public class Utente {
 	 *            the stato to set
 	 */
 	public void setStato(String stato) {
+
 		this.stato = stato;
 	}
 
@@ -104,6 +125,7 @@ public class Utente {
 	 * @return the telefono
 	 */
 	public Telefono getTelefono() {
+
 		return telefono;
 	}
 
@@ -112,6 +134,7 @@ public class Utente {
 	 *            the telefono to set
 	 */
 	public void setTelefono(Telefono telefono) {
+
 		this.telefono = telefono;
 	}
 
@@ -119,6 +142,7 @@ public class Utente {
 	 * @return the email
 	 */
 	public String getEmail() {
+
 		return email;
 	}
 
@@ -127,6 +151,7 @@ public class Utente {
 	 *            the email to set
 	 */
 	public void setEmail(String email) {
+
 		this.email = email;
 	}
 

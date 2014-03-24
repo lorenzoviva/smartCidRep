@@ -1,3 +1,4 @@
+
 package com.projectCid.struttureDati;
 
 import java.util.Date;
@@ -5,21 +6,32 @@ import java.util.Date;
 public class Conducente {
 
 	String cognome;
+
 	String nome;
+
 	Date dataDiNascita;
+
 	String codiceFiscale;
+
 	Indirizzo indirizzo;
+
 	String stato;
+
 	Telefono telefono;
+
 	String email;
+
 	String numeroPatente;
+
 	String categoriaPatente;
+
 	Date patenteValidaFinoAl;
 
 	/**
 	 * @return the cognome
 	 */
 	public String getCognome() {
+
 		return cognome;
 	}
 
@@ -28,6 +40,7 @@ public class Conducente {
 	 *            the cognome to set
 	 */
 	public void setCognome(String cognome) {
+
 		this.cognome = cognome;
 	}
 
@@ -35,6 +48,7 @@ public class Conducente {
 	 * @return the nome
 	 */
 	public String getNome() {
+
 		return nome;
 	}
 
@@ -43,6 +57,7 @@ public class Conducente {
 	 *            the nome to set
 	 */
 	public void setNome(String nome) {
+
 		this.nome = nome;
 	}
 
@@ -50,6 +65,7 @@ public class Conducente {
 	 * @return the dataDiNascita
 	 */
 	public Date getDataDiNascita() {
+
 		return dataDiNascita;
 	}
 
@@ -58,6 +74,7 @@ public class Conducente {
 	 *            the dataDiNascita to set
 	 */
 	public void setDataDiNascita(Date dataDiNascita) {
+
 		this.dataDiNascita = dataDiNascita;
 	}
 
@@ -65,6 +82,7 @@ public class Conducente {
 	 * @return the codiceFiscale
 	 */
 	public String getCodiceFiscale() {
+
 		return codiceFiscale;
 	}
 
@@ -73,6 +91,7 @@ public class Conducente {
 	 *            the codiceFiscale to set
 	 */
 	public void setCodiceFiscale(String codiceFiscale) {
+
 		this.codiceFiscale = codiceFiscale;
 	}
 
@@ -80,6 +99,7 @@ public class Conducente {
 	 * @return the indirizzo
 	 */
 	public Indirizzo getIndirizzo() {
+
 		return indirizzo;
 	}
 
@@ -88,6 +108,7 @@ public class Conducente {
 	 *            the indirizzo to set
 	 */
 	public void setIndirizzo(Indirizzo indirizzo) {
+
 		this.indirizzo = indirizzo;
 	}
 
@@ -95,6 +116,7 @@ public class Conducente {
 	 * @return the stato
 	 */
 	public String getStato() {
+
 		return stato;
 	}
 
@@ -103,6 +125,7 @@ public class Conducente {
 	 *            the stato to set
 	 */
 	public void setStato(String stato) {
+
 		this.stato = stato;
 	}
 
@@ -110,6 +133,7 @@ public class Conducente {
 	 * @return the telefono
 	 */
 	public Telefono getTelefono() {
+
 		return telefono;
 	}
 
@@ -118,6 +142,7 @@ public class Conducente {
 	 *            the telefono to set
 	 */
 	public void setTelefono(Telefono telefono) {
+
 		this.telefono = telefono;
 	}
 
@@ -125,6 +150,7 @@ public class Conducente {
 	 * @return the email
 	 */
 	public String getEmail() {
+
 		return email;
 	}
 
@@ -133,6 +159,7 @@ public class Conducente {
 	 *            the email to set
 	 */
 	public void setEmail(String email) {
+
 		this.email = email;
 	}
 
@@ -140,6 +167,7 @@ public class Conducente {
 	 * @return the numeroPatente
 	 */
 	public String getNumeroPatente() {
+
 		return numeroPatente;
 	}
 
@@ -148,6 +176,7 @@ public class Conducente {
 	 *            the numeroPatente to set
 	 */
 	public void setNumeroPatente(String numeroPatente) {
+
 		this.numeroPatente = numeroPatente;
 	}
 
@@ -155,6 +184,7 @@ public class Conducente {
 	 * @return the categoriaPatente
 	 */
 	public String getCategoriaPatente() {
+
 		return categoriaPatente;
 	}
 
@@ -163,6 +193,7 @@ public class Conducente {
 	 *            the categoriaPatente to set
 	 */
 	public void setCategoriaPatente(String categoriaPatente) {
+
 		this.categoriaPatente = categoriaPatente;
 	}
 
@@ -170,6 +201,7 @@ public class Conducente {
 	 * @return the patenteValidaFinoAl
 	 */
 	public Date getPatenteValidaFinoAl() {
+
 		return patenteValidaFinoAl;
 	}
 
@@ -178,6 +210,7 @@ public class Conducente {
 	 *            the patenteValidaFinoAl to set
 	 */
 	public void setPatenteValidaFinoAl(Date patenteValidaFinoAl) {
+
 		this.patenteValidaFinoAl = patenteValidaFinoAl;
 	}
 

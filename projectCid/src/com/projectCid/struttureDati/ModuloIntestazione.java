@@ -1,3 +1,4 @@
+
 package com.projectCid.struttureDati;
 
 import java.util.ArrayList;
@@ -6,16 +7,22 @@ import java.util.Date;
 public class ModuloIntestazione {
 
 	Date dataEoraIncidente;
+
 	Indirizzo luogo;
+
 	boolean feriti;
+
 	boolean danniAltriVeicoli;
+
 	boolean danniOggetti;
+
 	ArrayList<Testimone> testimoni = new ArrayList<Testimone>();
 
 	/**
 	 * @return the dataEoraIncidente
 	 */
 	public Date getDataEoraIncidente() {
+
 		return dataEoraIncidente;
 	}
 
@@ -24,6 +31,7 @@ public class ModuloIntestazione {
 	 *            the dataEoraIncidente to set
 	 */
 	public void setDataEoraIncidente(Date dataEoraIncidente) {
+
 		this.dataEoraIncidente = dataEoraIncidente;
 	}
 
@@ -31,6 +39,7 @@ public class ModuloIntestazione {
 	 * @return the luogo
 	 */
 	public Indirizzo getLuogo() {
+
 		return luogo;
 	}
 
@@ -39,6 +48,7 @@ public class ModuloIntestazione {
 	 *            the luogo to set
 	 */
 	public void setLuogo(Indirizzo luogo) {
+
 		this.luogo = luogo;
 	}
 
@@ -46,6 +56,7 @@ public class ModuloIntestazione {
 	 * @return the feriti
 	 */
 	public boolean isFeriti() {
+
 		return feriti;
 	}
 
@@ -54,6 +65,7 @@ public class ModuloIntestazione {
 	 *            the feriti to set
 	 */
 	public void setFeriti(boolean feriti) {
+
 		this.feriti = feriti;
 	}
 
@@ -61,6 +73,7 @@ public class ModuloIntestazione {
 	 * @return the danniAltriVeicoli
 	 */
 	public boolean isDanniAltriVeicoli() {
+
 		return danniAltriVeicoli;
 	}
 
@@ -69,6 +82,7 @@ public class ModuloIntestazione {
 	 *            the danniAltriVeicoli to set
 	 */
 	public void setDanniAltriVeicoli(boolean danniAltriVeicoli) {
+
 		this.danniAltriVeicoli = danniAltriVeicoli;
 	}
 
@@ -76,6 +90,7 @@ public class ModuloIntestazione {
 	 * @return the danniOggetti
 	 */
 	public boolean isDanniOggetti() {
+
 		return danniOggetti;
 	}
 
@@ -84,6 +99,7 @@ public class ModuloIntestazione {
 	 *            the danniOggetti to set
 	 */
 	public void setDanniOggetti(boolean danniOggetti) {
+
 		this.danniOggetti = danniOggetti;
 	}
 
@@ -91,6 +107,7 @@ public class ModuloIntestazione {
 	 * @return the testimoni
 	 */
 	public ArrayList<Testimone> getTestimoni() {
+
 		return testimoni;
 	}
 
@@ -99,6 +116,7 @@ public class ModuloIntestazione {
 	 *            the testimoni to set
 	 */
 	public void setTestimoni(ArrayList<Testimone> testimoni) {
+
 		this.testimoni = testimoni;
 	}
 

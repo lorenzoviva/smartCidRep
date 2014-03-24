@@ -1,17 +1,23 @@
+
 package com.projectCid.struttureDati;
 
 public class Veicolo {
 
 	boolean checkMotoreRimorchio;
+
 	String marca;
+
 	String tipo;
+
 	String targaOtelaio;
+
 	String paeseImmatricolazione;
 
 	/**
 	 * @return the checkMotoreRimorchio
 	 */
 	public boolean isCheckMotoreRimorchio() {
+
 		return checkMotoreRimorchio;
 	}
 
@@ -20,6 +26,7 @@ public class Veicolo {
 	 *            the checkMotoreRimorchio to set
 	 */
 	public void setCheckMotoreRimorchio(boolean checkMotoreRimorchio) {
+
 		this.checkMotoreRimorchio = checkMotoreRimorchio;
 	}
 
@@ -27,6 +34,7 @@ public class Veicolo {
 	 * @return the marca
 	 */
 	public String getMarca() {
+
 		return marca;
 	}
 
@@ -35,6 +43,7 @@ public class Veicolo {
 	 *            the marca to set
 	 */
 	public void setMarca(String marca) {
+
 		this.marca = marca;
 	}
 
@@ -42,6 +51,7 @@ public class Veicolo {
 	 * @return the tipo
 	 */
 	public String getTipo() {
+
 		return tipo;
 	}
 
@@ -50,6 +60,7 @@ public class Veicolo {
 	 *            the tipo to set
 	 */
 	public void setTipo(String tipo) {
+
 		this.tipo = tipo;
 	}
 
@@ -57,6 +68,7 @@ public class Veicolo {
 	 * @return the targaOtelaio
 	 */
 	public String getTargaOtelaio() {
+
 		return targaOtelaio;
 	}
 
@@ -65,6 +77,7 @@ public class Veicolo {
 	 *            the targaOtelaio to set
 	 */
 	public void setTargaOtelaio(String targaOtelaio) {
+
 		this.targaOtelaio = targaOtelaio;
 	}
 
@@ -72,6 +85,7 @@ public class Veicolo {
 	 * @return the paeseImmatricolazione
 	 */
 	public String getPaeseImmatricolazione() {
+
 		return paeseImmatricolazione;
 	}
 
@@ -80,6 +94,7 @@ public class Veicolo {
 	 *            the paeseImmatricolazione to set
 	 */
 	public void setPaeseImmatricolazione(String paeseImmatricolazione) {
+
 		this.paeseImmatricolazione = paeseImmatricolazione;
 	}
 

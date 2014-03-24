@@ -1,13 +1,17 @@
+
 package com.projectCid.struttureDati;
 
 public class Telefono {
+
 	String prefisso;
+
 	String numero;
 
 	/**
 	 * @return the prefisso
 	 */
 	public String getPrefisso() {
+
 		return prefisso;
 	}
 
@@ -16,6 +20,7 @@ public class Telefono {
 	 *            the prefisso to set
 	 */
 	public void setPrefisso(String prefisso) {
+
 		this.prefisso = prefisso;
 	}
 
@@ -23,6 +28,7 @@ public class Telefono {
 	 * @return the numero
 	 */
 	public String getNumero() {
+
 		return numero;
 	}
 
@@ -31,6 +37,7 @@ public class Telefono {
 	 *            the numero to set
 	 */
 	public void setNumero(String numero) {
+
 		this.numero = numero;
 	}
 
@@ -40,6 +47,7 @@ public class Telefono {
 	 * @return il numero di telefono
 	 */
 	public int getTelefonoInt() {
+
 		int a = Integer.parseInt(numero);
 		int b = (int) (Math.pow(10, numero.length()) * Integer
 				.parseInt(prefisso));

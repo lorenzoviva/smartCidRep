@@ -1,16 +1,23 @@
+
 package com.projectCid.struttureDati;
 
 public class Agenzia {
+
 	String denominazione;
+
 	Indirizzo indirizzo;
+
 	String stato;
+
 	Telefono telefono;
+
 	String email;
 
 	/**
 	 * @return the denominazione
 	 */
 	public String getDenominazione() {
+
 		return denominazione;
 	}
 
@@ -19,6 +26,7 @@ public class Agenzia {
 	 *            the denominazione to set
 	 */
 	public void setDenominazione(String denominazione) {
+
 		this.denominazione = denominazione;
 	}
 
@@ -26,6 +34,7 @@ public class Agenzia {
 	 * @return the indirizzo
 	 */
 	public Indirizzo getIndirizzo() {
+
 		return indirizzo;
 	}
 
@@ -34,6 +43,7 @@ public class Agenzia {
 	 *            the indirizzo to set
 	 */
 	public void setIndirizzo(Indirizzo indirizzo) {
+
 		this.indirizzo = indirizzo;
 	}
 
@@ -41,6 +51,7 @@ public class Agenzia {
 	 * @return the stato
 	 */
 	public String getStato() {
+
 		return stato;
 	}
 
@@ -49,6 +60,7 @@ public class Agenzia {
 	 *            the stato to set
 	 */
 	public void setStato(String stato) {
+
 		this.stato = stato;
 	}
 
@@ -56,6 +68,7 @@ public class Agenzia {
 	 * @return the telefono
 	 */
 	public Telefono getTelefono() {
+
 		return telefono;
 	}
 
@@ -64,6 +77,7 @@ public class Agenzia {
 	 *            the telefono to set
 	 */
 	public void setTelefono(Telefono telefono) {
+
 		this.telefono = telefono;
 	}
 
@@ -71,6 +85,7 @@ public class Agenzia {
 	 * @return the email
 	 */
 	public String getEmail() {
+
 		return email;
 	}
 
@@ -79,6 +94,7 @@ public class Agenzia {
 	 *            the email to set
 	 */
 	public void setEmail(String email) {
+
 		this.email = email;
 	}
 

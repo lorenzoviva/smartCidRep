@@ -2,6 +2,7 @@
 package com.projectCid.smartcid;
 
 import android.os.Bundle;
+import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
@@ -14,6 +15,7 @@ import android.view.View.OnClickListener;
 import android.view.View.OnDragListener;
 import android.view.View.OnTouchListener;
 import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
@@ -28,17 +30,17 @@ public class MainActivity extends Activity {
 
 	ZoomControls zoom;
 
-	TextView textview;
-
 	ImageView img;
 
 	float aspectRatio = 1;// rapporto di dimensioni tra la grandezza
-							// dell'immagine del modulo CID
+					// dell'immagine del modulo CID
 
 	// originale (pieno schermo) e le dimensioni dell'immagine rappresentata
 	// graficamente
 	float vx = 0, vy = 0, x = 0, y = 0;
-
+	ScaleAnimation scale= new ScaleAnimation(1,	1, 1, 1);
+	TranslateAnimation trans = new TranslateAnimation(0, 0, 0, 0);
+	Animation ani ; 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
@@ -48,23 +50,23 @@ public class MainActivity extends Activity {
 		username = intent.getStringExtra(EXTRA_MESSAGE);
 		zoom = (ZoomControls) findViewById(R.id.zoomControls1);
 		img = (ImageView) findViewById(R.id.imageView1);
-		textview = (TextView) findViewById(R.id.textView1);
-
 		zoom.setOnZoomInClickListener(new OnClickListener() {
-
+		
 			public void onClick(View v) {
-
-				textview.setText("zoom in : " + aspectRatio);
+				
 				aspectRatio += 0.1f;
 				if (aspectRatio > 5) {
 					aspectRatio = 5;
 				}
-				ScaleAnimation alpha = new ScaleAnimation(aspectRatio,
-						aspectRatio, aspectRatio, aspectRatio);
-				alpha.setDuration(0); // Make animation instant
-				alpha.setFillAfter(true); // Tell it to persist after the
-											// animation ends
-				img.startAnimation(alpha);
+				
+				
+				scale = new ScaleAnimation(aspectRatio,	aspectRatio, aspectRatio, aspectRatio);
+				scale.setDuration(0); // Make animation instant
+				scale.setFillAfter(true); // Tell it to persist after the animation ends
+				
+				img.startAnimation(trans);
+				img.startAnimation(scale);
+				
 
 			}
 		});
@@ -72,19 +74,21 @@ public class MainActivity extends Activity {
 
 			public void onClick(View v) {
 
-				textview.setText("zoom out : " + aspectRatio);
 				aspectRatio -= 0.1f;
 				if (aspectRatio < 1) {
 					aspectRatio = 1;
 				}
 
-				ScaleAnimation alpha = new ScaleAnimation(aspectRatio,
-						aspectRatio, aspectRatio, aspectRatio);
-				alpha.setDuration(0); // Make animation instant
-				alpha.setFillAfter(true); // Tell it to persist after the
+				scale = new ScaleAnimation(aspectRatio,	aspectRatio, aspectRatio, aspectRatio);
+				scale.setDuration(0); // Make animation instant
+				scale.setFillAfter(true); // Tell it to persist after the
 											// animation ends
 				Log.i("mainActivity", "touch event");
-				img.startAnimation(alpha);
+				
+				
+				img.startAnimation(trans);
+				img.startAnimation(scale);
+				
 			}
 		});
 		img.setOnTouchListener(new OnTouchListener() {
@@ -92,35 +96,25 @@ public class MainActivity extends Activity {
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 
-				TranslateAnimation alpha;
-				//textview.setText("event number :" + event.getActionIndex()+ "event coords:" + event.getX()+","+event.getY());
-				if (event.getAction()==  MotionEvent.ACTION_DOWN){
-					vx =  event.getX();
-					vy =  event.getY();
-					textview.setText("down vx : " + vx + " vy: " + vy + " x : " + x + " y: " + y);
-				}else if(event.getAction() == MotionEvent.ACTION_UP){
-					x = event.getX() - vx;
-					y = event.getY() - vy;
-					textview.setText("up vx : " + vx + " vy: " + vy + " x : " + x + " y: " + y);
-					alpha = new TranslateAnimation(x, x, y, y);
-					alpha.setDuration(0); // Make animation instant
-					alpha.setFillAfter(true); // Tell it to persist after the
-												// animation ends
-					img.startAnimation(alpha);
-				}else if(event.getAction() == MotionEvent.ACTION_MOVE){
-					x = event.getX() - vx;
-					y = event.getY() - vy;
-					textview.setText("move vx : " + vx + " vy: " + vy + " x : " + x + " y: " + y);
-					alpha = new TranslateAnimation(x, x, y, y);
-					alpha.setDuration(0); // Make animation instant
-					alpha.setFillAfter(true); // Tell it to persist after the
-												// animation ends
-					img.startAnimation(alpha);
 				
+				if (event.getAction() == MotionEvent.ACTION_DOWN) {
+					vx = event.getX();
+					vy = event.getY();
+				} else if (event.getAction() == MotionEvent.ACTION_MOVE) {
+					x = event.getX() - vx;
+					y = event.getY() - vy;
+					trans = new TranslateAnimation(x, x, y, y);
+					trans.setDuration(0); // Make animation instant
+					trans.setFillAfter(true); // Tell it to persist after the
+												// animation ends
+					img.startAnimation(scale);
+					img.startAnimation(trans);
+
 				}
-				return false;
+
+				return true;
 			}
-			
+
 		});
 		/*
 		 * img.setOnDragListener(new OnDragListener(){

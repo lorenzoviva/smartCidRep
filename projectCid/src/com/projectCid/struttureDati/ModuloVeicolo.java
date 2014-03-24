@@ -1,3 +1,4 @@
+
 package com.projectCid.struttureDati;
 
 /**
@@ -6,8 +7,12 @@ package com.projectCid.struttureDati;
  * @author DanieleNegroni
  */
 public class ModuloVeicolo {
+
 	Utente utente;
+
 	Veicolo veicolo;
+
 	CompagniaAssicurativa compagniaAssicurativa;
+
 	Conducente conducente;
 }

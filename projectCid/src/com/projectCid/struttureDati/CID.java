@@ -1,3 +1,4 @@
+
 package com.projectCid.struttureDati;
 
 /**
@@ -6,14 +7,18 @@ package com.projectCid.struttureDati;
 public class CID {
 
 	ModuloIntestazione intestazione;
+
 	ModuloVeicolo veicoloA, veicoloB;
+
 	ModuloCircostanzeIncidente circostanzeIncidente;
+
 	ModuloGrafico grafico;
 
 	/**
 	 * @return the intestazione
 	 */
 	public ModuloIntestazione getIntestazione() {
+
 		return intestazione;
 	}
 
@@ -22,6 +27,7 @@ public class CID {
 	 *            the intestazione to set
 	 */
 	public void setIntestazione(ModuloIntestazione intestazione) {
+
 		this.intestazione = intestazione;
 	}
 
@@ -29,6 +35,7 @@ public class CID {
 	 * @return the veicoloA
 	 */
 	public ModuloVeicolo getVeicoloA() {
+
 		return veicoloA;
 	}
 
@@ -38,6 +45,7 @@ public class CID {
 	 */
 
 	public void setVeicoloA(ModuloVeicolo veicoloA) {
+
 		this.veicoloA = veicoloA;
 	}
 
@@ -45,6 +53,7 @@ public class CID {
 	 * @return the veicoloB
 	 */
 	public ModuloVeicolo getVeicoloB() {
+
 		return veicoloB;
 	}
 
@@ -53,6 +62,7 @@ public class CID {
 	 *            the veicoloB to set
 	 */
 	public void setVeicoloB(ModuloVeicolo veicoloB) {
+
 		this.veicoloB = veicoloB;
 	}
 
@@ -60,6 +70,7 @@ public class CID {
 	 * @return the circostanzeIncidente
 	 */
 	public ModuloCircostanzeIncidente getCircostanzeIncidente() {
+
 		return circostanzeIncidente;
 	}
 
@@ -69,6 +80,7 @@ public class CID {
 	 */
 	public void setCircostanzeIncidente(
 			ModuloCircostanzeIncidente circostanzeIncidente) {
+
 		this.circostanzeIncidente = circostanzeIncidente;
 	}
 
@@ -76,6 +88,7 @@ public class CID {
 	 * @return the grafico
 	 */
 	public ModuloGrafico getGrafico() {
+
 		return grafico;
 	}
 
@@ -84,6 +97,7 @@ public class CID {
 	 *            the grafico to set
 	 */
 	public void setGrafico(ModuloGrafico grafico) {
+
 		this.grafico = grafico;
 	}
 

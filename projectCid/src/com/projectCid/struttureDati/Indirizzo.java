@@ -1,20 +1,28 @@
+
 package com.projectCid.struttureDati;
 
 public class Indirizzo {
+
 	String comune;
+
 	String provincia;
+
 	String via;
+
 	int numeroCivico;
+
 	/**
 	 * TODO: valutare se conviene utilizzare un oggetto di tipo CAP
 	 */
 	String cap;
+
 	String stato;
 
 	/**
 	 * @return the comune
 	 */
 	public String getComune() {
+
 		return comune;
 	}
 
@@ -23,6 +31,7 @@ public class Indirizzo {
 	 *            the comune to set
 	 */
 	public void setComune(String comune) {
+
 		this.comune = comune;
 	}
 
@@ -30,6 +39,7 @@ public class Indirizzo {
 	 * @return the provincia
 	 */
 	public String getProvincia() {
+
 		return provincia;
 	}
 
@@ -38,6 +48,7 @@ public class Indirizzo {
 	 *            the provincia to set
 	 */
 	public void setProvincia(String provincia) {
+
 		this.provincia = provincia;
 	}
 
@@ -45,6 +56,7 @@ public class Indirizzo {
 	 * @return the via
 	 */
 	public String getVia() {
+
 		return via;
 	}
 
@@ -53,6 +65,7 @@ public class Indirizzo {
 	 *            the via to set
 	 */
 	public void setVia(String via) {
+
 		this.via = via;
 	}
 
@@ -60,6 +73,7 @@ public class Indirizzo {
 	 * @return the numeroCivico
 	 */
 	public int getNumeroCivico() {
+
 		return numeroCivico;
 	}
 
@@ -68,6 +82,7 @@ public class Indirizzo {
 	 *            the numeroCivico to set
 	 */
 	public void setNumeroCivico(int numeroCivico) {
+
 		this.numeroCivico = numeroCivico;
 	}
 
@@ -75,6 +90,7 @@ public class Indirizzo {
 	 * @return the cap
 	 */
 	public String getCap() {
+
 		return cap;
 	}
 
@@ -83,6 +99,7 @@ public class Indirizzo {
 	 *            the cap to set
 	 */
 	public void setCap(String cap) {
+
 		this.cap = cap;
 	}
 
@@ -90,6 +107,7 @@ public class Indirizzo {
 	 * @return the stato
 	 */
 	public String getStato() {
+
 		return stato;
 	}
 
@@ -98,6 +116,7 @@ public class Indirizzo {
 	 *            the stato to set
 	 */
 	public void setStato(String stato) {
+
 		this.stato = stato;
 	}
 

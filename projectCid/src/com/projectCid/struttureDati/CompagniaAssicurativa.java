@@ -1,20 +1,29 @@
+
 package com.projectCid.struttureDati;
 
 import java.util.Date;
 
 public class CompagniaAssicurativa {
+
 	String denominazione;
+
 	String numeroPolizza;
+
 	String numeroCartaVerde;
+
 	Date periodoValiditaDal;
+
 	Date periodoValiditaAl;
+
 	Agenzia agenzia;
+
 	boolean coperturaDanniMateriali;
 
 	/**
 	 * @return the denominazione
 	 */
 	public String getDenominazione() {
+
 		return denominazione;
 	}
 
@@ -23,6 +32,7 @@ public class CompagniaAssicurativa {
 	 *            the denominazione to set
 	 */
 	public void setDenominazione(String denominazione) {
+
 		this.denominazione = denominazione;
 	}
 
@@ -30,6 +40,7 @@ public class CompagniaAssicurativa {
 	 * @return the numeroPolizza
 	 */
 	public String getNumeroPolizza() {
+
 		return numeroPolizza;
 	}
 
@@ -38,6 +49,7 @@ public class CompagniaAssicurativa {
 	 *            the numeroPolizza to set
 	 */
 	public void setNumeroPolizza(String numeroPolizza) {
+
 		this.numeroPolizza = numeroPolizza;
 	}
 
@@ -45,6 +57,7 @@ public class CompagniaAssicurativa {
 	 * @return the numeroCartaVerde
 	 */
 	public String getNumeroCartaVerde() {
+
 		return numeroCartaVerde;
 	}
 
@@ -53,6 +66,7 @@ public class CompagniaAssicurativa {
 	 *            the numeroCartaVerde to set
 	 */
 	public void setNumeroCartaVerde(String numeroCartaVerde) {
+
 		this.numeroCartaVerde = numeroCartaVerde;
 	}
 
@@ -60,6 +74,7 @@ public class CompagniaAssicurativa {
 	 * @return the periodoValiditaDal
 	 */
 	public Date getPeriodoValiditaDal() {
+
 		return periodoValiditaDal;
 	}
 
@@ -68,6 +83,7 @@ public class CompagniaAssicurativa {
 	 *            the periodoValiditaDal to set
 	 */
 	public void setPeriodoValiditaDal(Date periodoValiditaDal) {
+
 		this.periodoValiditaDal = periodoValiditaDal;
 	}
 
@@ -75,6 +91,7 @@ public class CompagniaAssicurativa {
 	 * @return the periodoValiditaAl
 	 */
 	public Date getPeriodoValiditaAl() {
+
 		return periodoValiditaAl;
 	}
 
@@ -83,6 +100,7 @@ public class CompagniaAssicurativa {
 	 *            the periodoValiditaAl to set
 	 */
 	public void setPeriodoValiditaAl(Date periodoValiditaAl) {
+
 		this.periodoValiditaAl = periodoValiditaAl;
 	}
 
@@ -90,6 +108,7 @@ public class CompagniaAssicurativa {
 	 * @return the agenzia
 	 */
 	public Agenzia getAgenzia() {
+
 		return agenzia;
 	}
 
@@ -98,6 +117,7 @@ public class CompagniaAssicurativa {
 	 *            the agenzia to set
 	 */
 	public void setAgenzia(Agenzia agenzia) {
+
 		this.agenzia = agenzia;
 	}
 
@@ -105,6 +125,7 @@ public class CompagniaAssicurativa {
 	 * @return the coperturaDanniMateriali
 	 */
 	public boolean isCoperturaDanniMateriali() {
+
 		return coperturaDanniMateriali;
 	}
 
@@ -113,6 +134,7 @@ public class CompagniaAssicurativa {
 	 *            the coperturaDanniMateriali to set
 	 */
 	public void setCoperturaDanniMateriali(boolean coperturaDanniMateriali) {
+
 		this.coperturaDanniMateriali = coperturaDanniMateriali;
 	}
 
